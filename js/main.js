@@ -28,7 +28,7 @@ function showPost(slug){
   for (let post of posts) {
     console.log(post);
     if (post.slug === slug) {
-    document.querySelector("#grid-posts").innerHTML += `
+    document.querySelector("#grid-posts").innerHTML = `
     <article class = "grid-item">
       <h2>${post.slug}</h2>
       <p>${post.content.rendered}</p>
