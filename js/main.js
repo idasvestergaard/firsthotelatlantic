@@ -1,27 +1,44 @@
 "use strict";
 
+let posts = [];
 // Fetch wordpress files
 
-fetch("http://idasteendahl.com/wordpress/wp-json/wp/v2/posts?_embed&categories=2")
+fetch("http://idasteendahl.com/wordpress/wp-json/wp/v2/posts")
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    appendPosts(json);
+    posts = json;
+//    appendPosts(json);
   });
 
-
-function appendPosts(posts) {
+/* function appendPosts(posts) {
   for (let post of posts) {
     console.log(post);
     document.querySelector("#grid-posts").innerHTML += `
     <article class = "grid-item">
-      <h2>${post.title.rendered}</h2>
+      <h2>${post.slug}</h2>
       <p>${post.content.rendered}</p>
       </article>
     `;
   }
+} */
+
+function showPost(slug){
+  for (let post of posts) {
+    console.log(post);
+    if (post.slug === slug) {
+    document.querySelector("#grid-posts").innerHTML += `
+    <article class = "grid-item">
+      <h2>${post.slug}</h2>
+      <p>${post.content.rendered}</p>
+      </article>
+    `;
+  } }
 }
+
+
+
 
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
