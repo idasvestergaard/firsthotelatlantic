@@ -19,3 +19,28 @@ h1 {padding: 30px}
 {background-color: transparent;
 border-color: transparent;
 }
+
+#morgenmadsbuffet {
+  width: 25%;
+  float: left;
+}
+
+#bier {
+  width: 20%;
+}
+#stuepige {
+width: 20%;
+}
+
+#receptionist {
+  width:20%;
+}
+
+#kimdegn {
+  width:20%;
+}
+
+#logo {
+  width: 20%;
+
+}
