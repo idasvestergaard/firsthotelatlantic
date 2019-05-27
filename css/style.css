@@ -21,6 +21,30 @@ border-color: transparent;
 
 }
 
+.btn-secondary, .btn-secondary:hover{
+    color: white;
+    background-color: #bd372e;
+    border-color: #bd372e;
+    margin-left: 75%;
+    margin-bottom: 5%;
+    font-size: 25px;
+    width: 20%;
+}
+
+.btn-secondary:hover {}
+
+button.close, button.close:hover {color: white;
+  background-color: #bd372e;
+  border-color: #bd372e;
+  margin-left: 85%;
+  padding-bottom: 6px;
+  line-height: 0.8;
+  margin-top: 5%;
+  width: 5%;
+  text-align: right;
+  font-size: 35px;
+  opacity: 1;
+}
 
 .container {
   margin-top: 17%;
