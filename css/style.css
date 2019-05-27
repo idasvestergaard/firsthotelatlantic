@@ -18,19 +18,72 @@ h1 {padding: 30px}
 .btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
 {background-color: transparent;
 border-color: transparent;
-width: 20%;
+
 }
 
+
+.container {
+  margin-top: 17%;
+}
+
+/*styling af receptionisten*/
+
+.col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    margin-top: 15%;
+}
+
+/*styling af kim*/
+
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 13%;
+    margin-left: 8%;}
+
+/*kuffert aka donald trump*/
+
+.col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 84.333333%;
+    margin-left: 33%;
+  margin-top: 45%
+}
+
+
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    width: 50%;
+    margin-top: 13%;
+    margin-left: 40%;}
+
 #morgenmadsbuffet {
-  width: 100%;
-  float: left;
+  width: 95%;
+      margin-top: 5%;
 }
 
 #bier {
-  width: 100%;
+  width: 50%;
+  margin-left: 53%;
 }
+
+.col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    width: 50%;
+    margin-top: 13%;
+    margin-left: 40%;
+}
+
 #stuepige {
-width: 100%;
+width: 50%;
 }
 
 #receptionist {
@@ -38,14 +91,17 @@ width: 100%;
 }
 
 #kimdegn {
-  width:100%;
+  width:27%;
 }
 
 #logo {
-  width: 100%;
+  width: 30%;
 }
 
 #udsigt {
   width: 100%;
   opacity: 0.0;
 }
+
+#kuffert {
+  width:40%;}

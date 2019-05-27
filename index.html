@@ -11,40 +11,69 @@
 </head>
 
 <body>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Morgenmadsbuffet" onclick="showPost('morgenmadsbuffet')"><img id="morgenmadsbuffet" src="img/morgenmadsbuffet.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Udsigten" onclick="showPost('udsigten')"><img id="udsigt" src="img/udsigt.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Bierne" onclick="showPost('bierne')"><img id="bier" src="img/bistad-og-bier.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Stuepige" onclick="showPost('stuepige')"><img id="stuepige" src="img/Studepige.png" width="250"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Reception" onclick="showPost('anmeldelse')"><img id="receptionist" src="img/receptionist.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Velkommen" onclick="showPost('velkommen')"><img id="kimdegn" src="img/Kimdegn.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Flying Elephant" onclick="showPost('logo')"><img id="logo" src="img/Elephant.png"></button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Værelse" onclick="showPost('kuffert')"><img src="img/testman.gif"></button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-<div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <section id="grid-posts" class="grid-container">
-</section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Morgenmadsbuffet" onclick="showPost('morgenmadsbuffet')"><img id="morgenmadsbuffet" src="img/morgenmadsbuffet.png"></button>
 
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Udsigten" onclick="showPost('udsigten')"><img id="udsigt" src="img/udsigt.png"></button>
+
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Bierne" onclick="showPost('bierne')"><img id="bier" src="img/bistad-blå.png"></button>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Stuepige" onclick="showPost('stuepige')"><img id="stuepige" src="img/Studepige.png"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Værelse" onclick="showPost('kuffert')"><img id="kuffert" src="img/kuffert.png"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Reception" onclick="showPost('anmeldelse')"><img id="receptionist" src="img/receptionist.png"></button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Velkommen" onclick="showPost('velkommen')"><img id="kimdegn" src="img/Kimdegn.png"></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Flying Elephant" onclick="showPost('logo')"><img id="logo" src="img/flying-elephant.png"></button>
+        </div>
+      </div>
     </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Send message</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="grid-posts" class="grid-container">
+            </section>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+
 </html>
