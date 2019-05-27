@@ -18,29 +18,34 @@ h1 {padding: 30px}
 .btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
 {background-color: transparent;
 border-color: transparent;
+width: 20%;
 }
 
 #morgenmadsbuffet {
-  width: 25%;
+  width: 100%;
   float: left;
 }
 
 #bier {
-  width: 20%;
+  width: 100%;
 }
 #stuepige {
-width: 20%;
+width: 100%;
 }
 
 #receptionist {
-  width:20%;
+  width:100%;
 }
 
 #kimdegn {
-  width:20%;
+  width:100%;
 }
 
 #logo {
-  width: 20%;
+  width: 100%;
+}
 
+#udsigt {
+  width: 100%;
+  opacity: 0.0;
 }
