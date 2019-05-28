@@ -49,3 +49,14 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text(recipient)
   modal.find('.modal-body input').val(recipient)
 })
+
+/* Javascript */
+
+//Make sure that the dom is ready
+$(function () {
+
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
+
+});
