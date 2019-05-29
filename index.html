@@ -81,9 +81,15 @@
 <div id="ratingModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
       <div class="modal-body">
+        <p>Vil du sende din bedømmelse til Tripadvisor?</p>
         <section id="grid-ratings" class="grid-container">
         </section>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="addRating()">Ikke nu</button>
+
       </div>
     </div>
   </div>
