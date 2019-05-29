@@ -1,7 +1,9 @@
-html {width: 1240px;
+html {
+  width: 1240px;
   height: 2000px;
   margin: 0;
-  margin-left: 20%;}
+  margin-left: 20%;
+}
 
 body {
   background-image: url(../img/baggrund.png);
@@ -10,31 +12,36 @@ body {
   overflow-x: hidden;
 }
 
-h1 {padding: 30px}
-
-.grid-container {padding: 30px}
-
-/* Bootstrap overwrite */
-
-.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
-{background-color: transparent;
-border-color: transparent;
-
+h1 {
+  padding: 30px
 }
 
-.btn-secondary, .btn-secondary:hover{
-    color: white;
-    background-color: #bd372e;
-    border-color: #bd372e;
-    margin-left: 75%;
-    margin-bottom: 5%;
-    font-size: 25px;
-    width: 20%;
+.grid-container {
+  padding: 30px
+}
+
+/* Bootstrap overwrite */
+.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-secondary, .btn-secondary:hover {
+  color: white;
+  background-color: #bd372e;
+  border-color: #bd372e;
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-bottom: 5%;
+  font-size: 25px;
+  width: 20%;
+
 }
 
 .btn-secondary:hover {}
 
-button.close, button.close:hover {color: white;
+button.close, button.close:hover {
+  color: white;
   background-color: #bd372e;
   border-color: #bd372e;
   margin-left: 85%;
@@ -48,51 +55,48 @@ button.close, button.close:hover {color: white;
 }
 
 /* Bootstrap overwrite end */
-
 .container {
   margin-top: 17%;
 }
 
 /*styling af receptionisten*/
-
 .col-5 {
-    -ms-flex: 0 0 41.666667%;
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-    margin-top: 15%;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  margin-top: 15%;
 }
 
 /*styling af kim*/
-
 .col-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 13%;
-    margin-left: 8%;}
-
-/*kuffert aka donald trump*/
-
-.col-7 {
-    -ms-flex: 0 0 58.333333%;
-    flex: 0 0 58.333333%;
-    max-width: 84.333333%;
-    margin-left: 33%;
-  margin-top: 45%
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 13%;
+  margin-left: 8%;
 }
 
+/*kuffert aka donald trump*/
+.col-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 84.333333%;
+  margin-left: 33%;
+  margin-top: 30%
+}
 
 .col-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-    width: 50%;
-    margin-top: 13%;
-    margin-left: 40%;}
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  width: 50%;
+  margin-top: 13%;
+  margin-left: 40%;
+}
 
 #morgenmadsbuffet {
   width: 95%;
-      margin-top: 5%;
+  margin-top: 5%;
 }
 
 #bier {
@@ -100,29 +104,20 @@ button.close, button.close:hover {color: white;
   margin-left: 53%;
 }
 
-.col-8 {
-    -ms-flex: 0 0 66.666667%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-    width: 50%;
-    margin-top: 13%;
-    margin-left: 40%;
-}
-
 #stuepige {
-width: 50%;
+  width: 35%;
 }
 
 #receptionist {
-  width:100%;
+  width: 100%;
 }
 
 #kimdegn {
-  width:27%;
+  width: 27%;
 }
 
-#logo {
-  width: 30%;
+#logo {margin-top: -30%;
+  width: 25%;
 }
 
 #udsigt {
@@ -131,12 +126,16 @@ width: 50%;
 }
 
 #kuffert {
-  width:40%;}
+  width: 20%;
+}
 
-  #rateYo {margin-left: 30%
-  }
+
+
+#rateYo {
+  margin-left: 30%
+}
 
 /*styler textarea*/
-  #title {
-    margin: 2%;
-  }
+#title {
+  margin: 2%;
+}

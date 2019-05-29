@@ -1,6 +1,8 @@
 "use strict";
 
 let posts = [];
+let selectedPost;
+let ratings = [];
 // Fetch wordpress files
 
 fetch("http://idasteendahl.com/wordpress/wp-json/wp/v2/posts")
@@ -9,7 +11,7 @@ fetch("http://idasteendahl.com/wordpress/wp-json/wp/v2/posts")
   })
   .then(function(json) {
     posts = json;
-//    appendPosts(json);
+    //    appendPosts(json);
   });
 
 /* function appendPosts(posts) {
@@ -24,22 +26,37 @@ fetch("http://idasteendahl.com/wordpress/wp-json/wp/v2/posts")
   }
 } */
 
-function showPost(slug){
+function showPost(slug) {
   for (let post of posts) {
     console.log(post);
     if (post.slug === slug) {
-    document.querySelector("#grid-posts").innerHTML = `
+      selectedPost= post;
+      document.querySelector("#grid-posts").innerHTML = `
     <article class = "grid-item">
       <h2>${post.slug}</h2>
       <p>${post.content.rendered}</p>
       </article>
     `;
-  } }
+    }
+  }
+}
+
+function addRating(){
+  console.log(selectedPost);
+  let rating = {
+    rating: $("#rateYo").rateYo("option", "rating"),
+    slug: selectedPost.slug
+  }
+  ratings.push(rating);
+  console.log(ratings);
+  if (ratings.length === 3){
+    console.log("test1");
+  }
+
 }
 
 
-
-$('#exampleModal').on('show.bs.modal', function (event) {
+$('#exampleModal').on('show.bs.modal', function(event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -47,16 +64,18 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   var modal = $(this)
   modal.find('.modal-title').text(recipient)
   modal.find('.modal-body input').val(recipient)
+  $("#rateYo").rateYo("option", "rating", 0);
 })
 
 /* Javascript */
 
 //Make sure that the dom is ready
-$(function () {
+$(function() {
 
   $("#rateYo").rateYo({
-starWidth: "40px",
-rating: 1.5,
-halfStar: true });
+    starWidth: "40px",
+    rating: 1.5,
+    halfStar: true
+  });
 
 });

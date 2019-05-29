@@ -13,8 +13,13 @@
 </head>
 
 <body>
-
+  <!--Clickbare elementer-->
   <div class="container">
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Flying Elephant" onclick="showPost('logo')"><img id="logo" src="img/flying-elephant.png"></button>
+      </div>
+    </div>
     <div class="row">
       <div class="col">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Morgenmadsbuffet" onclick="showPost('morgenmadsbuffet')"><img id="morgenmadsbuffet" src="img/morgenmadsbuffet.png"></button>
@@ -27,52 +32,50 @@
       <div class="col">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Bierne" onclick="showPost('bierne')"><img id="bier" src="img/bistad-blå.png"></button>
       </div>
-      <div class="row">
-        <div class="col-8">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Stuepige" onclick="showPost('stuepige')"><img id="stuepige" src="img/Studepige.png"></button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-7">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Værelse" onclick="showPost('kuffert')"><img id="kuffert" src="img/kuffert.png"></button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-5">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Reception" onclick="showPost('anmeldelse')"><img id="receptionist" src="img/receptionist.png"></button>
-        </div>
-        <div class="col-6">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Velkommen" onclick="showPost('velkommen')"><img id="kimdegn" src="img/Kimdegn.png"></button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Flying Elephant" onclick="showPost('logo')"><img id="logo" src="img/flying-elephant.png"></button>
-        </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Stuepige" onclick="showPost('stuepige')"><img id="stuepige" src="img/Studepige.png"></button>
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          <!--  <h5 class="modal-title" id="exampleModalLabel">New message</h5>-->
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-
-          <div class="modal-body">
-            <section id="grid-posts" class="grid-container">
-            </section>
-
-          </div>
-          <div id="rateYo"></div>
-
-          <textarea id="title" type="text " rows="4" cols="1" onkeyup="Allow()" placeholder="I have no clue what im doing"></textarea>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-        </div>
+    <div class="row">
+      <div class="col-7">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Værelse" onclick="showPost('kuffert')"><img id="kuffert" src="img/kuffert.png"></button>
       </div>
     </div>
+    <div class="row">
+      <div class="col-5">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Reception" onclick="showPost('anmeldelse')"><img id="receptionist" src="img/receptionist.png"></button>
+      </div>
+      <div class="col-6">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="Velkommen" onclick="showPost('velkommen')"><img id="kimdegn" src="img/Kimdegn.png"></button>
+      </div>
+    </div>
+  </div>
+
+  <!--Modaler -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!--  <h5 class="modal-title" id="exampleModalLabel">New message</h5>-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <section id="grid-posts" class="grid-container">
+          </section>
+        </div>
+
+        <div id="rateYo"></div>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="addRating()">Angiv</button>
+
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
