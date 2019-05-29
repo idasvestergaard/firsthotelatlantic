@@ -51,9 +51,20 @@ function addRating(){
   console.log(ratings);
   if (ratings.length === 3){
     console.log("test1");
-  }
+
+    for (let rating of ratings) {
+      console.log(rating);
+        document.querySelector("#grid-ratings").innerHTML += `
+      <article class = "grid-item">
+        <h2>${rating.slug}</h2>
+        <p>${rating.rating}</p>
+        </article>
+      `;
+}
+$('#ratingModal').modal('show');
 
 }
+ }
 
 
 $('#exampleModal').on('show.bs.modal', function(event) {
