@@ -39,7 +39,6 @@ function showPost(slug){
 
 
 
-
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient = button.data('whatever') // Extract info from data-* attributes
@@ -56,7 +55,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 $(function () {
 
   $("#rateYo").rateYo({
-    rating: 3.6
-  });
+starWidth: "40px",
+rating: 1.5,
+halfStar: true });
 
 });
