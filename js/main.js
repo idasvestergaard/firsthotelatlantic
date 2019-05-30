@@ -33,7 +33,8 @@ function showPost(slug) {
       selectedPost= post;
       document.querySelector("#grid-posts").innerHTML = `
     <article class = "grid-item">
-      <h2>${post.slug}</h2>
+      <h2>${post.title.rendered}</h2>
+      <br>
       <p>${post.content.rendered}</p>
       </article>
     `;
@@ -45,7 +46,7 @@ function addRating(){
   console.log(selectedPost);
   let rating = {
     rating: $("#rateYo").rateYo("option", "rating"),
-    slug: selectedPost.slug
+    slug: selectedPost.title.rendered
   }
   ratings.push(rating);
   console.log(ratings);
@@ -56,8 +57,8 @@ function addRating(){
       console.log(rating);
         document.querySelector("#grid-ratings").innerHTML += `
       <article class = "grid-item">
-        <h2>${rating.slug}</h2>
-        <p>${rating.rating}</p>
+        <h4>${rating.slug}</h4>
+        <p>Du har givet ${rating.slug} ${rating.rating} stjerner!</p>
         </article>
       `;
 }

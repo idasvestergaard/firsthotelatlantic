@@ -7,8 +7,9 @@
   <meta name="description" content="">
   <title>First Hotel Atlantic</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xex6icf.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -80,15 +81,28 @@
 
 <div id="ratingModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
-    <div class="modal-content">
+    <div id="modal-content-rating" class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-body">
-        <p>Vil du sende din bedømmelse til Tripadvisor?</p>
+        <h2>Vil du sende din bedømmelse til Tripadvisor?</h2>
+
         <section id="grid-ratings" class="grid-container">
         </section>
+
+        <section class="review">
+        <h4>Anmeldelsens titel</h4>
+        <input type="text" value="Opsummér dit besøg eller fremhæv en interessant oplysning">
+        <h4>Din anmeldelse</h4>
+        <textarea id="anmeldelse-comment">Fortæl folk om din oplevelse: Dit værelse, beliggenheden, faciliteterne?</textarea>
+        <p>Hvilken type rejse var du på?</p>
+        <p>Hvornår foretog du rejsen?</p>
+        </section>
+
+
         <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="addRating()">Ikke nu</button>
+        <button type="button" class="btn btn-secondary" id="angiv" data-dismiss="modal" onclick="addRating()">Send til Tripadvisor</button>
 
       </div>
     </div>

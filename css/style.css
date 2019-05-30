@@ -17,7 +17,7 @@ h1 {
 }
 
 .grid-container {
-  padding: 30px
+  margin: 5%;
 }
 
 /* Bootstrap overwrite */
@@ -35,10 +35,9 @@ h1 {
   margin-bottom: 5%;
   font-size: 25px;
   width: 20%;
+  display: inline-block;
 
 }
-
-.btn-secondary:hover {}
 
 button.close, button.close:hover {
   color: white;
@@ -53,6 +52,35 @@ button.close, button.close:hover {
   font-size: 35px;
   opacity: 1;
 }
+
+#angiv {background-color: #278283;
+  border-color: #278283;
+margin-left: 1%;
+width: 38%;
+}
+
+figure {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+padding-bottom: 5%;}
+
+/* Fonts */
+
+p, button, textarea, input {font-family: linotype-vectora, sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 18px;}
+
+h4 {font-weight: 400;
+font-size: 18px;}
+
+h1, h2, h3, h4 {font-family: linotype-vectora, sans-serif;
+font-weight: 700;
+font-style: normal;}
+
+h3 {font-size: 25px;}
+
 
 /* Bootstrap overwrite end */
 .container {
@@ -130,7 +158,6 @@ button.close, button.close:hover {
 }
 
 
-
 #rateYo {
   margin-left: 30%
 }
@@ -139,3 +166,29 @@ button.close, button.close:hover {
 #title {
   margin: 2%;
 }
+
+/* Rating modal */
+
+.modal {overflow-y: auto;}
+
+#modal-content-rating {width: 700px;
+margin-left: -50%;
+}
+
+#modal-content-rating h2 {margin-left: 5%;
+font-size: 25px;}
+
+#modal-content-rating .close {margin-left: 92%;}
+
+input {width: 90%;
+margin-bottom: 2%;
+color: grey;}
+
+textarea {rows: 4;
+width: 90%;
+resize: none;
+outline: none;
+color: grey;
+}
+
+.review {margin-left: 5%;}
