@@ -1,13 +1,13 @@
 html {
-  width: 1240px;
-  height: 2000px;
+  width: 1020px;
+  height: 1920px;
   margin: 0;
   margin-left: 20%;
 }
 
 body {
   background-image: url(../img/baggrund.png);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -21,8 +21,14 @@ body {
 .btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
   background-color: transparent;
   border-color: transparent;
+  width: auto;
 }
 
+#stuepige-button {
+  width: 50%;
+    margin-left: 45%;
+        margin-top: 10%;
+}
 .btn-secondary, .btn-secondary:hover {
   color: white;
   background-color: #bd372e;
@@ -81,7 +87,7 @@ h3 {font-size: 25px;}
 
 /* Bootstrap overwrite end */
 .container {
-  margin-top: 17%;
+  margin-top: 36%;
 }
 
 
@@ -130,16 +136,18 @@ h3 {font-size: 25px;}
 }
 
 #stuepige {
-  width: 35%;
-  margin-top: 15%
+  width:70%;
 }
 
+
 #receptionist {
-  width: 100%;
+  width: 65%;
+margin-right: 25%;
+margin-top: 15%;
 }
 
 #kimdegn {
-  width: 27%;
+  width: 26%;
 }
 
 #logo {margin-top: -30%;
@@ -153,6 +161,7 @@ h3 {font-size: 25px;}
 
 #kuffert {
   width: 20%;
+  margin-top: 38%;
 }
 
 
