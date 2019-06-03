@@ -96,40 +96,6 @@ h3 {font-size: 25px;}
 }
 
 
-/*styling af receptionisten*/
-.col-5 {
-  -ms-flex: 0 0 41.666667%;
-  flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-  margin-top: 15%;
-}
-
-/*styling af kim*/
-.col-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 13%;
-  margin-left: 8%;
-}
-
-/*kuffert aka donald trump*/
-.col-7 {
-  -ms-flex: 0 0 58.333333%;
-  flex: 0 0 58.333333%;
-  max-width: 84.333333%;
-  margin-top: 27%
-}
-
-.col-8 {
-  -ms-flex: 0 0 66.666667%;
-  flex: 0 0 66.666667%;
-  max-width: 66.666667%;
-  width: 50%;
-  margin-top: 13%;
-  margin-left: 40%;
-}
-
 #morgenmadsbuffet {
   width: 95%;
   margin-top: 5%;
@@ -137,7 +103,7 @@ h3 {font-size: 25px;}
 
 #bier {
   width: 50%;
-  margin-left: 53%;
+  margin-left: 50%;
 }
 
 #stuepige {
