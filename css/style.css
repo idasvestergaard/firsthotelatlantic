@@ -10,6 +10,7 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  padding: 0!important;
 }
 
 
@@ -24,6 +25,14 @@ body {
   width: auto;
 }
 
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0!important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem transparent;
+}
 #stuepige-button {
   width: 50%;
     margin-left: 45%;
