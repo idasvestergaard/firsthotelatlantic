@@ -32,7 +32,7 @@ body {
 #stuepige-button {
   width: 50%;
     margin-left: 45%;
-        margin-top: 10%;
+
 }
 .btn-secondary, .btn-secondary:hover {
   color: white;
@@ -98,7 +98,7 @@ h3 {font-size: 25px;}
 
 #morgenmadsbuffet {
   width: 95%;
-  margin-top: 5%;
+  margin-top: -20%;
 }
 
 #bier {
@@ -110,15 +110,15 @@ h3 {font-size: 25px;}
   width:70%;
 }
 
-
 #receptionist {
   width: 65%;
 margin-right: 25%;
-margin-top: 15%;
+margin-top: 35%;
 }
 
 #kimdegn {
   width: 26%;
+  margin-top: 25%;
 }
 
 #logo {margin-top: -30%;
